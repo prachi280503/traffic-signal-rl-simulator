@@ -3,22 +3,14 @@
 This project implements a **Traffic Signal Control Simulator** using  
 **Multi-Agent Reinforcement Learning (MARL)** with live visualization.
 
-The goal is to reduce vehicle congestion and waiting time by allowing
-traffic signals to learn optimal signal phases dynamically.
-
 ---
 
 ## 📊 How It Works
 
-- Each traffic intersection acts as a **Reinforcement Learning agent**
-- Agents observe:
-  - Queue lengths at each road
-  - Neighbor intersection congestion
-- Actions:
-  - Switch traffic signal phases (NS or EW green)
-- Rewards:
-  - Negative total waiting time (minimize congestion)
-- Performance is compared with **fixed-time traffic signals**
+- Each intersection acts as a Reinforcement Learning agent
+- Agents observe queue lengths and neighbor congestion
+- Rewards are based on minimizing waiting time
+- Performance is compared with fixed-time signals
 
 ---
 
@@ -28,7 +20,7 @@ traffic signals to learn optimal signal phases dynamically.
 - Reinforcement Learning (Q-learning)
 - NumPy
 - Matplotlib
-- Pillow (for GIF generation)
+- Pillow
 
 ---
 
@@ -38,5 +30,3 @@ traffic signals to learn optimal signal phases dynamically.
 pip install numpy matplotlib pillow
 python train.py
 python visual_compare_multi.py
-## 🎥 Demo
-![Traffic RL Simulation](traffic_rl_vs_fixed.gif)
