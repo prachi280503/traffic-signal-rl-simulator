@@ -24,10 +24,12 @@ Each traffic signal learns to adapt its green phases dynamically based on vehicl
 - Performance is compared with fixed-time signals
 
 ## ▶️ How to Run
+
 ```bash
 pip install numpy matplotlib pillow
 python train.py
 python visual_compare_multi.py
+
 ## 🎥 Demo
 
 ![Traffic RL Simulation](traffic_rl_vs_fixed.gif)
