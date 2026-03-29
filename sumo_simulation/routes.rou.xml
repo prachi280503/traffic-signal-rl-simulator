@@ -1,0 +1,16 @@
+<routes>
+
+    <vType id="car" accel="1.0" decel="4.5" length="5" maxSpeed="13.9"/>
+
+    <route id="north_south" edges="n2c c2s"/>
+    <route id="south_north" edges="s2c c2n"/>
+    <route id="east_west" edges="e2c c2w"/>
+    <route id="west_east" edges="w2c c2e"/>
+
+    <!-- Continuous traffic -->
+    <flow id="f1" type="car" route="north_south" begin="0" end="2000" number="500"/>
+    <flow id="f2" type="car" route="south_north" begin="0" end="2000" number="500"/>
+    <flow id="f3" type="car" route="east_west" begin="0" end="2000" number="500"/>
+    <flow id="f4" type="car" route="west_east" begin="0" end="2000" number="500"/>
+
+</routes>

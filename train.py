@@ -21,9 +21,12 @@ for ep in range(episodes):
 
     episode_rewards.append(total_reward)
     print(f"Episode {ep+1} | Reward: {total_reward}")
-
 plt.plot(episode_rewards)
 plt.xlabel("Episodes")
 plt.ylabel("Total Reward")
-plt.title("RL Traffic Signal Learning")
+plt.title("Training Performance of RL Traffic Signal Controller")
+
+# SAVE GRAPH
+plt.savefig("training_reward_graph.png")
+
 plt.show()
